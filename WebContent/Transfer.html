@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+ 
+<head>
+<link rel="stylesheet" href="css/styles.css" type="text/css" >
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("homepage.html");
+});
+</script>
+
+<form action="Transfer">
+<h1>Transfer Money</h1>
+Sender Account Number:<input type="number" name="sendid"/><br><br>
+Receiver Account Number:<input type="number" name="receiveid"/><br><br>
+Enter Amount:<input type="number" name="tamount"/><br><br>
+<center><input type="submit" value="Transfer"></center><br><br>
+</form>
+</body>
+</html>

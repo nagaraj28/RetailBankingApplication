@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css" type="text/css" >
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("homepage.html");
+});
+</script>
+<h1>Withdraw Money</h1><br>
+<form action="Withdraw">
+Customer Id <input type="text" name="cusid"><br><br>
+Account Id <input type="text" name="accid"><br><br>
+Account Type <input type="text" name="acctype"><br><br>
+Balance <input type="text" name="bal"><br><br>
+Withdraw Amount <input type="text" name="withdrawamt"><br><br>
+<center><input type="submit" value="withdraw"></center>
+</form>
+
+</body>
+</html>

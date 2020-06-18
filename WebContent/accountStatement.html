@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css" type="text/css" >
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("homepage.html");
+});
+</script>
+<h1>Transaction Details</h1><br><br>
+<form action="Transaction">
+Customer Id:<input type="text" name="accid"/><br><br>
+From:<input type="text"/><br><br>
+After:<input type="text"/><br><br>
+<input type="Submit" value="Fetch"/><br><br>
+</form>
+</body>
+</html>

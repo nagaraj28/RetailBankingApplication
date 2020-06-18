@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration Form</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" >
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("homepage.html");
+});
+</script>
+<h1>New User Registration</h1>
+<form action="UserRegistration">Account Type:
+<select id="">
+<option value="Current">Current</option>
+<option value="Savings">Savings</option>
+<option value="Family">Family</option>
+</select><br><br>
+Account No:
+<input type="text" name="accid"><br><br>
+Customer Id:
+<input type="number" name="cusid"/><br><br>
+
+UserName:
+
+<input type="text" name="uname"/><br><br>
+Date of Birth(YYYYMMDD)
+<input type="text" name="age"/><br><br>
+Mobile:
+<input type="number" name="mobile"/><br><br>
+State:
+<select id="" name="state">
+<option value="TS" >Telangana</option>
+<option value="AP">Andhra Pradesh</option>
+<option value="KA">Karnataka</option>
+</select><br><br>City:
+<select id="" name="city">
+<option value="Hyd">Hyderabad</option>
+<option value="Amravati">Amravati</option>
+<option value="Bagalore">Bagalore</option>
+</select><br><br>
+Address:
+<input type="text" name="address"/><br><br>
+<center><input type="submit"/><br><br></center>
+</form>
+</body>
+</html>

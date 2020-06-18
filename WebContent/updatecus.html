@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css" type="text/css" >
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("homepage.html");
+});
+</script>
+<h1>Update Employee</h1>
+<form>
+Customer SSId* <input type="text" name="ssid"><br><br>
+Customer Id <input type="text" name="eid"><br><br>
+Old Customer Name <input type="text" name="oldcn"><br><br>
+New Customer Name* <input type="text" name="cn" required><br><br>
+Old Address <input type="text" name="oldadd"><br><br>
+New Address* <input type="text" name="add" required><br><br>
+Old Age <input type="text" name="oldage"><br><br>
+New Age*(YYYYMMDD))<input type="text" name="age" required><br><br>
+ (*Fields are mandatory)<br><br>
+<center><input type="submit" value="update"></center>
+</form>
+
+</body>
+</html>

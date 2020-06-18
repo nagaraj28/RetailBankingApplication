@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="ISO-8859-1">
+<head>
+
+<title>Delete user</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" >
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("homepage.html");
+});
+</script>
+<form action="DelteUser">
+<center><h1>Delete User Account</h1></center><br><br>
+Account No:*
+<input type="text" name="accid"><br><br>
+Account Type:
+<select>
+<option>
+Savings
+</option>
+<option>
+Current
+</option>
+<option>
+Family
+</option>
+</select><br>
+<center><input type="submit" value="delete"></center>
+</form>
+</body>
+</html>

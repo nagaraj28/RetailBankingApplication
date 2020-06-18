@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css" type="text/css" >
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("homepage.html");
+});
+</script>
+<h1>Create Account</h1><br>
+<form action="DepositMoney">
+Customer Id <input type="text" name="cusid"><br><br>
+<label for="acctype">Account type* </label>
+<select id="acctype" name="acctype">
+<option value="savings">Savings Account</option>
+<option value="current">Current Account</option>
+</select><br><br>
+Deposit Amount* <input type="text" name="depo"><br><br>
+(*)Fields are compulsory <br><br>
+<center><input type="submit" value="deposit"></center>
+</form>
+</body>
+</html>
